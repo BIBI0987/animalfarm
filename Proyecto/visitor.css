@@ -1,8 +1,14 @@
-/* Estilos generales */
+/* General */
 *,
 *::before,
 *::after {
     box-sizing: border-box;
+}
+
+p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Cochin, Georgia, Times, 'Times New Roman', serif, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 1rem;
 }
 
 body {
@@ -18,12 +24,13 @@ header {
     width: 100%;
     display: flex;
     flex-direction: column;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));/*Degrade*/
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.05));/*Degrade*/
     padding: 0.5rem 0;
     position: fixed;
+    z-index: 1000;
 }
 
-/* Top section of the header */
+/* Top header */
 .header-top {
     display: flex;
     justify-content: space-between;
@@ -39,6 +46,7 @@ header {
 .logo img {
     height: 58px;
     width: 180px;
+    margin: 20px;
 }
 
 /* Menu */
@@ -61,7 +69,7 @@ header {
 .menu a{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Cochin, Georgia, Times, 'Times New Roman', serif, Helvetica, sans-serif;
     font-weight: lighter;
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
 a {
@@ -115,7 +123,7 @@ a {
     text-align: center;
     font-family: 'Source Sans Pro', sans-serif;
     font-optical-sizing: auto;
-    font-weight:bold;
+    font-weight:900;
     font-size: large;
 }
 
@@ -125,6 +133,7 @@ a {
     text-align: right;
     color: gainsboro;
     text-decoration: none;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 7);
 }
 
 .script-nav .name:hover {
@@ -151,7 +160,7 @@ a {
 
 .script-nav .name {
     display: block;
-    padding: 1rem;
+    padding: 0;
     text-align: center;
     color: gainsboro;
     text-decoration: none;
@@ -175,7 +184,49 @@ a {
     text-decoration: none;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Cochin, Georgia, Times, 'Times New Roman', serif, Helvetica, sans-serif;
     font-weight: lighter;
-    font-size: 0.8rem;
+    font-size: 1rem;
+}
+
+/*Resources*/
+.resources {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.resources h2 {
+    margin: 0;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    color: #4b0c77;
+    font-size: 1.5em;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 800;
+}
+
+.resources ul {
+    list-style-type: none;
+    padding: 0;
+    margin-left: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.resources li {
+    margin-bottom: 10px;
+    margin-left: 10px;
+    max-width: 200px;
+}
+
+.resources li a {
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Cochin, Georgia, Times, 'Times New Roman', serif, Helvetica, sans-serif;
+    color: #4b0c77;
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
 }
 
 /* Footer */
@@ -300,6 +351,26 @@ footer {
 
     .menu.show {
         display: block; /* Mostrar el menú cuando se hace clic en el botón de hamburguesa */
+    }
+
+    .resources ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px; 
+        margin: 0;
+    }
+
+    .resources {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .resources h2 {
+        margin-bottom: 20px;
+    }
+
+    .resources li {
+        margin-left: 0;
     }
     
     .footer-top,

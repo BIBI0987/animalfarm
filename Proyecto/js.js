@@ -1,3 +1,12 @@
+document.addEventListener("DOMContentLoaded", () => {
+    const hamburger = document.getElementById("hamburger");
+    const menu = document.querySelector(".menu");
+
+    hamburger.addEventListener("click", () => {
+        menu.classList.toggle("show");
+    });
+});
+
 let slideIndex = 0;
         const slides = document.querySelector('.slides');
         const totalSlides = document.querySelectorAll('.slide').length;
@@ -16,14 +25,5 @@ let slideIndex = 0;
             }
             slides.style.transform = `translateX(${-slideIndex * 100}%)`;
         }
-
-document.addEventListener("DOMContentLoaded", () => {
-    const hamburger = document.getElementById("hamburger");
-    const menu = document.querySelector(".menu");
-
-    hamburger.addEventListener("click", () => {
-        menu.classList.toggle("show");
-    });
-});
 
 

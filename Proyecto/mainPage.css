@@ -133,6 +133,7 @@ a {
     text-align: right;
     color: gainsboro;
     text-decoration: none;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 7);
 }
 
 .script-nav .name:hover {
@@ -159,7 +160,7 @@ a {
 
 .script-nav .name {
     display: block;
-    padding: 1rem;
+    padding: 0;
     text-align: center;
     color: gainsboro;
     text-decoration: none;
@@ -548,6 +549,48 @@ main {
     margin: 0.5rem;
 }
 
+/*Resources*/
+.resources {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.resources h2 {
+    margin: 0;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    color: #4b0c77;
+    font-size: 1.5em;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 800;
+}
+
+.resources ul {
+    list-style-type: none;
+    padding: 0;
+    margin-left: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.resources li {
+    margin-bottom: 10px;
+    margin-left: 10px;
+    max-width: 200px;
+}
+
+.resources li a {
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Cochin, Georgia, Times, 'Times New Roman', serif, Helvetica, sans-serif;
+    color: #4b0c77;
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
 /* Footer */
 footer {
     padding: 1em;
@@ -703,6 +746,26 @@ footer {
 
     .aside-section .image-container {
         width: 100%;
+    }
+
+    .resources ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px; 
+        margin: 0;
+    }
+
+    .resources {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .resources h2 {
+        margin-bottom: 20px;
+    }
+
+    .resources li {
+        margin-left: 0;
     }
 
     .footer-top,

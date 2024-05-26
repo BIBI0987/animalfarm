@@ -221,64 +221,215 @@ a {
 }
 
 /*MAIN*/
+main {
+    padding: 40px;
+}
 .container {
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 20px;
 }
 
-main {
-    padding: 40px 0;
-}
-
 /* Section Styles */
-.section {
+section {
     margin-bottom: 40px;
-}
-
-.section h2 {
-    text-align: center;
-    font-size: 2em;
-    margin-bottom: 20px;
-    color: #4b0c77;
-}
-
-/* Cards Grid */
-.cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
-}
-
-/* Card Styles */
-.card {
+    padding: 20px;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+}
+
+section h2{
+    text-align: left;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: black;
+    font-size: 1.5em;
+    font-family: "SourceSansPro-Regular", "微软雅黑";
+    font-weight: 500;
+    border-left: 2px solid #4b0c77;
+    padding-bottom: 10px;
+}
+
+/* Useful Information Grid */
+.useful-info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+/* Useful Information Box */
+.useful-info-box {
+    background-color: #f0f0f0;
+    border-radius: 8px;
     overflow: hidden;
-    display: flex;
-    flex-direction: column;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
 }
 
-.card-image {
+.useful-info-box:hover {
+    transform: translateY(-10px);
+}
+
+.useful-info-box a {
+    display: block;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #4b0c77;
+    font-size: 1.2em;
+    font-family: "SourceSansPro-Regular", "微软雅黑";
+    font-weight: bold;
+}
+
+.useful-information, .after-graduation, .in-media-section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* After Graduation Section */
+.after-graduation {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #f8f9fa; /* Cambio de color de fondo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h2 {
+    font-size: 3em; /* Tamaño de fuente ligeramente más grande */
+    color: black; /* Color del título */
+    border-left: 4px solid #4b0c77; /* Grosor y color del borde izquierdo */
+    padding-left: 10px; /* Espaciado adicional a la izquierda del título */
+    margin-bottom: 20px; /* Espaciado adicional en la parte inferior del título */
+}
+
+.grad-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.grad-item {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.grad-item img {
+    width: 100%;
     height: 200px;
-    background-size: cover;
-    background-position: center;
+    object-fit: cover;
 }
 
-.card-content {
+.grad-content {
+    padding: 20px;
+    text-align: center;
+    margin: 0;
+}
+
+.grad-content p {
+    margin: 5px;
+    font-size: 1.2em; /* Aumento del tamaño de fuente */
+    color: #333; /* Cambio de color del texto */
+    border-bottom: 2px solid #4b0c77;
+    font-family: "SourceSansPro-Regular", "微软雅黑";
+    font-weight: bold;
+}
+
+.additional-info {
+    color: #fff;
+    text-align: left;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.additional-info a {
+    padding: 0;
+    margin-top: 0.1rem;
+    color: #4b0c77;
+    text-decoration: none;
+    font-family: "SourceSansPro-Regular", "微软雅黑";
+    font-weight: 300;
+    margin: 5px; /* Espaciado entre los enlaces */
+}
+
+.additional-info a p{
+    margin-top: 0;
+    color: black;
+    font-family: "SourceSansPro-Regular", "微软雅黑";
+    font-weight: 500;
+    margin-left: 1rem;
+}
+
+.additional-info a p:hover {
+    color:#4b0c77;
+}
+
+/* Section 3 */
+.in-media-section {
+    margin-bottom: 40px;
     padding: 20px;
 }
 
-.card-content h3 {
-    margin: 0 0 10px;
-    font-size: 1.5em;
-    color: #4b0c77;
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
 }
 
-.card-content p {
+.info-box {
+    background-color: #fff;
+    border-left: 3px solid #4b0c77;
+    transition: transform 0.3s;
+}
+
+.info-box:hover {
+    transform: translateY(-5px);
+}
+
+.info-content {
+    padding: 20px;
+    text-align: left;
+}
+
+.info-content h3 {
+    font-size: 1.5em;
+    color: black;
+    font-family: "SourceSansPro-Regular", "微软雅黑";
+    font-weight: 600;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+    margin: 0;
+    pad: 0;
+}
+
+.info-content p {
     color: #666;
-    line-height: 1.5;
+    line-height: 1.6;
+}
+
+.info-box p {
+    margin-top: 10px;
+}
+.info-content ul {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.info-content ul li {
+    margin-bottom: 20px;
+}
+
+.info-content ul li a {
+    text-decoration: none;
+    color: #4b0c77;
+    font-family: "SourceSansPro-Regular", "微软雅黑";
+    font-weight: 400;
 }
 
 /*Resources*/
@@ -456,8 +607,42 @@ footer {
         width: 100%;
     }
 
-    .cards {
+    .container {
+        padding: 10px;
+    }
+
+    .section {
+        padding: 10px;
+    }
+
+    .info-grid {
         grid-template-columns: 1fr;
+    }
+
+    .more-link{
+        margin: 0;
+    }
+
+    .info-box {
+        margin-bottom: 10px;
+    }
+
+    .info-content h3 {
+        font-size: 1.3em;
+    }
+
+    .info-content p {
+        font-size: 0.9em;
+    }
+
+    .grad-grid {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+    
+    .grad-item {
+        flex: 1 1 100%;
+        max-width: 100%;
     }
 
     .resources ul {

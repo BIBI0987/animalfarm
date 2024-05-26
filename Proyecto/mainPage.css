@@ -557,19 +557,21 @@ main {
 }
 
 .resources h2 {
-    margin: 0;
     margin-bottom: 10px;
     margin-left: 10px;
     color: #4b0c77;
+    font-weight: 800;
+    margin: 0;
+    padding: 20px;
     font-size: 1.5em;
     font-family: 'Oswald', sans-serif;
-    font-weight: 800;
 }
 
 .resources ul {
     list-style-type: none;
     padding: 0;
-    margin-left: 100px;
+    margin: 0;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

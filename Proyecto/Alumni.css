@@ -187,6 +187,100 @@ a {
     font-size: 1rem;
 }
 
+/*IMAGE*/
+.background-image {
+    display: flex;
+    flex-grow: 1;
+    min-height: 40vh;
+}
+
+.pricipal-image {
+    position: relative;
+    min-width: 100%;
+    max-height: 82vh;
+    overflow: hidden;
+}
+
+.pricipal-image img {
+    width: 100%;
+    min-height: 36vh;
+    display: block;
+}
+
+.image-title {
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+    margin: 0;
+    color: white;
+    padding: 0px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 7);
+    font-family: 'Oswald', sans-serif; /* Aplicar la fuente */
+    font-size: 4em; /* Tamaño grande para el título */
+    font-weight: bold;
+}
+
+/*MAIN*/
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+main {
+    padding: 40px 0;
+}
+
+/* Section Styles */
+.section {
+    margin-bottom: 40px;
+}
+
+.section h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #4b0c77;
+}
+
+/* Cards Grid */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Card Styles */
+.card {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-image {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h3 {
+    margin: 0 0 10px;
+    font-size: 1.5em;
+    color: #4b0c77;
+}
+
+.card-content p {
+    color: #666;
+    line-height: 1.5;
+}
+
 /*Resources*/
 .resources {
     padding: 20px;
@@ -351,6 +445,19 @@ footer {
 
     .menu.show {
         display: block; /* Mostrar el menú cuando se hace clic en el botón de hamburguesa */
+    }
+
+    .image-title {
+        font-size: 2.7em;
+        padding: 5px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
     }
 
     .resources ul {

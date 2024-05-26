@@ -314,7 +314,7 @@ a:hover h2 {
     border-bottom: 1px solid #ccc;
 }
 
-/* Footer */
+/* FOOTER*/
 footer {
     padding: 1em;
     background-color: #4b0c77;
@@ -323,7 +323,7 @@ footer {
     width: 100%;
 }
 
-/* Footer: Logo and Share Section */
+/* Logo and Share Sectio*/
 .footer-top {
     display: flex;
     justify-content: space-between;
@@ -423,17 +423,17 @@ footer {
     }
 
     .menu {
-        display: none; /* Oculta el menú en dispositivos móviles */
-        flex-direction: column; /* Cambia la dirección a columna */
-        align-items: center; /* Centra los elementos */
+        display: none; 
+        flex-direction: column; 
+        align-items: center;
     }
 
     .menu ul {
-        flex-direction: column; /* Cambia la dirección de los elementos de la lista a columna */
+        flex-direction: column; 
     }
 
     .hamburger {
-        display: flex; /* Muestra el botón de menú en dispositivos móviles */
+        display: flex;
         position: absolute;
         top: 0;
         right: 10px;
@@ -441,7 +441,7 @@ footer {
     }
 
     .menu.show {
-        display: block; /* Mostrar el menú cuando se hace clic en el botón de hamburguesa */
+        display: block; 
     }
 
     .image-title {

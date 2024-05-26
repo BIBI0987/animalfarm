@@ -19,7 +19,7 @@ body {
     padding: 0;
 }
 
-/* Header */
+/* HEADER*/
 header {
     width: 100%;
     display: flex;
@@ -30,7 +30,7 @@ header {
     z-index: 1000;
 }
 
-/* Top header */
+/* Top header*/
 .header-top {
     display: flex;
     justify-content: space-between;
@@ -38,7 +38,7 @@ header {
     padding: 0 0.5rem;
 }
 
-/* Logo */
+/* Logo*/
 .logo {
     text-align: left;
 }
@@ -49,7 +49,7 @@ header {
     margin: 20px;
 }
 
-/* Menu */
+/* Menu*/
 .menu {
     display: flex;
 }
@@ -83,7 +83,7 @@ a {
     color: white;
 }
 
-/* Hamburger menu */
+/* Hamburger menu*/
 .hamburger {
     display: none;
     flex-direction: column;
@@ -101,7 +101,7 @@ a {
     margin: 4px 0;
 }
 
-/* Script Nav */
+/* Script Nav*/
 .script-nav {
     display: flex;
     justify-content: center;
@@ -153,7 +153,7 @@ a {
     transform: translateX(-50%);
     background-color: white;
     padding: 0.5rem;
-    z-index: 10; /* Asegura que el desplegable esté encima de otros elementos */
+    z-index: 10; 
     border-top: rgba(231, 98, 9, 0.849) solid 3px; 
 }
 
@@ -220,7 +220,7 @@ a {
     font-weight: bold;
 }
 
-/* MAIN */
+/* MAIN*/
 main {
     display: flex;
     flex-direction: column;
@@ -228,7 +228,7 @@ main {
     padding: 20px;
 }
 
-/* Container */
+/* Container*/
 .container {
     max-width: 100%;
     margin-left: 90px;
@@ -238,7 +238,7 @@ main {
     gap: 20px;
 }
 
-/* Article */
+/* Article*/
 article {
     display: flex;
     flex-wrap: wrap;
@@ -329,7 +329,7 @@ article p {
     border-bottom: 1px solid #ccc;
 }
 
-/* Footer */
+/* FOOTER*/
 footer {
     padding: 1em;
     background-color: #4b0c77;
@@ -338,7 +338,7 @@ footer {
     width: 100%;
 }
 
-/* Footer: Logo and Share Section */
+/* Logo and Share Section*/
 .footer-top {
     display: flex;
     justify-content: space-between;
@@ -368,7 +368,7 @@ footer {
     padding: 0.5rem;
 }
 
-/* Info section in footer */
+/* Info section in footer*/
 .info {
     display: flex;
     justify-content: space-between;
@@ -432,17 +432,17 @@ footer {
 
 @media screen and (max-width: 1023px) {
     .menu {
-        display: none; /* Oculta el menú en dispositivos móviles */
-        flex-direction: column; /* Cambia la dirección a columna */
-        align-items: center; /* Centra los elementos */
+        display: none; 
+        flex-direction: column; 
+        align-items: center;
     }
 
     .menu ul {
-        flex-direction: column; /* Cambia la dirección de los elementos de la lista a columna */
+        flex-direction: column;
     }
 
     .hamburger {
-        display: flex; /* Muestra el botón de menú en dispositivos móviles */
+        display: flex;
         position: absolute;
         top: 0;
         right: 10px;
@@ -450,7 +450,7 @@ footer {
     }
 
     .menu.show {
-        display: block; /* Mostrar el menú cuando se hace clic en el botón de hamburguesa */
+        display: block; 
     }
 
     .image-title {

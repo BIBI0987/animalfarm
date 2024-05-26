@@ -19,7 +19,7 @@ body {
     padding: 0;
 }
 
-/* Header */
+/* HEADER*/
 header {
     width: 100%;
     display: flex;
@@ -30,7 +30,7 @@ header {
     z-index: 1000;
 }
 
-/* Top header */
+/* Top header*/
 .header-top {
     display: flex;
     justify-content: space-between;
@@ -38,7 +38,7 @@ header {
     padding: 0 0.5rem;
 }
 
-/* Logo */
+/* Logo*/
 .logo {
     text-align: left;
 }
@@ -49,7 +49,7 @@ header {
     margin: 20px;
 }
 
-/* Menu */
+/* Menu*/
 .menu {
     display: flex;
 }
@@ -83,7 +83,7 @@ a {
     color: white;
 }
 
-/* Hamburger menu */
+/* Hamburger menu*/
 .hamburger {
     display: none;
     flex-direction: column;
@@ -101,7 +101,7 @@ a {
     margin: 4px 0;
 }
 
-/* Script Nav */
+/* Script Nav*/
 .script-nav {
     display: flex;
     justify-content: center;
@@ -153,7 +153,7 @@ a {
     transform: translateX(-50%);
     background-color: white;
     padding: 0.5rem;
-    z-index: 10; /* Asegura que el desplegable esté encima de otros elementos */
+    z-index: 10; 
     border-top: rgba(231, 98, 9, 0.849) solid 3px; 
 }
 
@@ -255,7 +255,7 @@ button:hover {
     right: 10px;
 }
 
-/*Main*/
+/*MAIN*/
 main {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -265,7 +265,7 @@ main {
     margin: auto;
     background-color: #f4f4f4;
 }
-/* Container Styles */
+/* Container*/
 .container {
     display: grid;
     gap: 20px;
@@ -276,7 +276,7 @@ main {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Section Styles */
+/* Section*/
 .section {
     display: grid;
     background: #fff;
@@ -353,15 +353,9 @@ main {
     border-radius: 10px;
 }
 
- /* SECTION 2 */
+ /* Section 2*/
 .title p{
     color: black;
-}
-
-.research-container {
-    display: grid;
-    grid-template-rows: auto;
-    gap: 20px;
 }
 
 .research .image-event {
@@ -372,7 +366,17 @@ main {
     border-radius: 10px;
 }
 
-/* Aside Styles */
+.research-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.research{
+    margin: 0.5rem;
+}
+
+/* Aside*/
 .aside-section {
     background-color: #4b0c77;
     border-radius: 15px;
@@ -537,18 +541,6 @@ main {
     font-weight: bold;
 }
 
-/*Section 2*/
-
-.research-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-}
-
-.research{
-    margin: 0.5rem;
-}
-
 /*Resources*/
 .resources {
     padding: 20px;
@@ -593,7 +585,7 @@ main {
     border-bottom: 1px solid #ccc;
 }
 
-/* Footer */
+/* FOOTER*/
 footer {
     padding: 1em;
     background-color: #4b0c77;
@@ -602,7 +594,7 @@ footer {
     width: 100%;
 }
 
-/* Footer: Logo and Share Section */
+/* Logo and Share Section*/
 .footer-top {
     display: flex;
     justify-content: space-between;
@@ -632,7 +624,7 @@ footer {
     padding: 0.5rem;
 }
 
-/* Info section in footer */
+/* Info section in footer*/
 .info {
     display: flex;
     justify-content: space-between;
@@ -702,17 +694,17 @@ footer {
     }
 
     .menu {
-        display: none; /* Oculta el menú en dispositivos móviles */
-        flex-direction: column; /* Cambia la dirección a columna */
-        align-items: center; /* Centra los elementos */
+        display: none; 
+        flex-direction: column;
+        align-items: center;
     }
 
     .menu ul {
-        flex-direction: column; /* Cambia la dirección de los elementos de la lista a columna */
+        flex-direction: column;
     }
 
     .hamburger {
-        display: flex; /* Muestra el botón de menú en dispositivos móviles */
+        display: flex;
         position: absolute;
         top: 0;
         right: 10px;
@@ -720,7 +712,7 @@ footer {
     }
 
     .menu.show {
-        display: block; /* Mostrar el menú cuando se hace clic en el botón de hamburguesa */
+        display: block;
     }
 
     main {

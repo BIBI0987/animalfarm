@@ -19,7 +19,7 @@ body {
     padding: 0;
 }
 
-/* Header */
+/* HEADER*/
 header {
     width: 100%;
     display: flex;
@@ -30,7 +30,7 @@ header {
     z-index: 1000;
 }
 
-/* Top header */
+/* Top header*/
 .header-top {
     display: flex;
     justify-content: space-between;
@@ -38,7 +38,7 @@ header {
     padding: 0 0.5rem;
 }
 
-/* Logo */
+/* Logo*/
 .logo {
     text-align: left;
 }
@@ -49,7 +49,7 @@ header {
     margin: 20px;
 }
 
-/* Menu */
+/* Menu*/
 .menu {
     display: flex;
 }
@@ -83,7 +83,7 @@ a {
     color: white;
 }
 
-/* Hamburger menu */
+/* Hamburger menu*/
 .hamburger {
     display: none;
     flex-direction: column;
@@ -215,8 +215,8 @@ a {
     color: white;
     padding: 0px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 7);
-    font-family: 'Oswald', sans-serif; /* Aplicar la fuente */
-    font-size: 4em; /* Tamaño grande para el título */
+    font-family: 'Oswald', sans-serif;
+    font-size: 4em;
     font-weight: bold;
 }
 
@@ -230,7 +230,7 @@ main {
     padding: 20px;
 }
 
-/* Section Styles */
+/* Section*/
 section {
     margin-bottom: 40px;
     padding: 20px;
@@ -251,14 +251,14 @@ section h2{
     padding-bottom: 10px;
 }
 
-/* Info Grid */
+/* Info Grid*/
 .info-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 20px;
 }
 
-/* Info Box */
+/* Info Box*/
 .info-box {
     display: flex;
     flex-direction: column;
@@ -302,7 +302,7 @@ section h2{
     line-height: 1.5;
 }
 
-/* More Link */
+/* More Link*/
 .more-link {
     display: inline;
     margin: 10px 100px 250px 100px;
@@ -317,7 +317,7 @@ section h2{
     text-align: center;
 }
 
-/* News Section */
+/* News Section*/
 .news-section {
     background-color: #4b0c77; 
     padding: 40px 0;
@@ -345,7 +345,7 @@ section h2{
     margin-left: 1rem;
 }
 
-/* News Grid */
+/* News Grid*/
 .news-grid {
     display: flex;
     flex-wrap: wrap;
@@ -356,10 +356,10 @@ section h2{
     position: relative;
     background-size: cover;
     background-position: center;
-    height: 300px; /* Altura de las imágenes */
+    height: 300px; 
     overflow: hidden;
-    flex: 1 1 calc(33.333% - 20px); /* Distribución de los elementos en la fila */
-    max-width: calc(33.333% - 20px); /* Ancho máximo de cada elemento */
+    flex: 1 1 calc(33.333% - 20px); 
+    max-width: calc(33.333% - 20px);
 }
 
 .news-item:before {
@@ -369,7 +369,7 @@ section h2{
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(to top, rgba(0,0,0,0.7), transparent); /* Degradado de abajo hacia arriba */
+    background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
 }
 
 .news-content {
@@ -435,7 +435,7 @@ section h2{
     border-bottom: 1px solid #ccc;
 }
 
-/* Footer */
+/* FOOTER*/
 footer {
     padding: 1em;
     background-color: #4b0c77;
@@ -538,17 +538,17 @@ footer {
 
 @media screen and (max-width: 1023px) {
     .menu {
-        display: none; /* Oculta el menú en dispositivos móviles */
-        flex-direction: column; /* Cambia la dirección a columna */
-        align-items: center; /* Centra los elementos */
+        display: none; 
+        flex-direction: column; 
+        align-items: center; 
     }
 
     .menu ul {
-        flex-direction: column; /* Cambia la dirección de los elementos de la lista a columna */
+        flex-direction: column; 
     }
 
     .hamburger {
-        display: flex; /* Muestra el botón de menú en dispositivos móviles */
+        display: flex; 
         position: absolute;
         top: 0;
         right: 10px;
@@ -556,7 +556,7 @@ footer {
     }
 
     .menu.show {
-        display: block; /* Mostrar el menú cuando se hace clic en el botón de hamburguesa */
+        display: block;
     }
 
     .image-title {

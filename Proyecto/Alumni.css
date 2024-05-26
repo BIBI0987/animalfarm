@@ -19,7 +19,7 @@ body {
     padding: 0;
 }
 
-/* Header */
+/* HEARDER */
 header {
     width: 100%;
     display: flex;
@@ -222,7 +222,7 @@ a {
 
 /*MAIN*/
 main {
-    padding: 40px;
+    padding: 10px;
 }
 .container {
     max-width: 100%;
@@ -230,7 +230,7 @@ main {
     padding: 20px;
 }
 
-/* Section Styles */
+/* Section*/
 section {
     margin-bottom: 40px;
     padding: 20px;
@@ -251,14 +251,13 @@ section h2{
     padding-bottom: 10px;
 }
 
-/* Useful Information Grid */
+/* Useful Information*/
 .useful-info-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 20px;
 }
 
-/* Useful Information Box */
 .useful-info-box {
     background-color: #f0f0f0;
     border-radius: 8px;
@@ -290,21 +289,21 @@ section h2{
     border-radius: 8px;
 }
 
-/* After Graduation Section */
+/* After Graduation*/
 .after-graduation {
     margin-bottom: 40px;
     padding: 20px;
-    background-color: #f8f9fa; /* Cambio de color de fondo */
+    background-color: #f8f9fa;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
 
 h2 {
-    font-size: 3em; /* Tamaño de fuente ligeramente más grande */
-    color: black; /* Color del título */
-    border-left: 4px solid #4b0c77; /* Grosor y color del borde izquierdo */
-    padding-left: 10px; /* Espaciado adicional a la izquierda del título */
-    margin-bottom: 20px; /* Espaciado adicional en la parte inferior del título */
+    font-size: 3em; 
+    color: black;
+    border-left: 4px solid #4b0c77; 
+    padding-left: 10px; 
+    margin-bottom: 20px; 
 }
 
 .grad-grid {
@@ -371,7 +370,7 @@ h2 {
     color:#4b0c77;
 }
 
-/* Section 3 */
+/* Section 3*/
 .in-media-section {
     margin-bottom: 40px;
     padding: 20px;
@@ -474,7 +473,7 @@ h2 {
     border-bottom: 1px solid #ccc;
 }
 
-/* Footer */
+/* FOOTER*/
 footer {
     padding: 1em;
     background-color: #4b0c77;
@@ -483,7 +482,7 @@ footer {
     width: 100%;
 }
 
-/* Footer: Logo and Share Section */
+/* Logo and Share Section*/
 .footer-top {
     display: flex;
     justify-content: space-between;
@@ -513,7 +512,7 @@ footer {
     padding: 0.5rem;
 }
 
-/* Info section in footer */
+/* Info section in footer*/
 .info {
     display: flex;
     justify-content: space-between;
@@ -575,7 +574,7 @@ footer {
     font-size: 0.7rem;
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 800px) {
     .menu {
         display: none; /* Oculta el menú en dispositivos móviles */
         flex-direction: column; /* Cambia la dirección a columna */
@@ -605,6 +604,10 @@ footer {
         justify-content: center;
         align-items: center;
         width: 100%;
+    }
+
+    main {
+        padding: 0;
     }
 
     .container {
